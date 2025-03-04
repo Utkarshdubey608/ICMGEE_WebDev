@@ -11,13 +11,12 @@ body {
     line-height: 1.6;
 }
 
-.container {
+.Apurva_Abhijeet {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* About Section */
 .about-section {
     display: flex;
     flex-wrap: wrap;
