@@ -1,9 +1,9 @@
-/* General Styles */
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/yellowbackground.jpg'); /* Replace with your image path */
+    background-image: url('images/yellowbackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: rgba(255, 255, 255, 0.85); /* added transparency */
+    background-color: rgba(255, 255, 255, 0.85); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -59,9 +59,9 @@ body {
     line-height: 1.8;
 }
 
-/* Scope Section */
+
 .scope-section {
-    background-color: rgba(255, 255, 255, 0.85); /* added transparency */
+    background-color: rgba(255, 255, 255, 0.85); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
