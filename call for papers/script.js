@@ -351,3 +351,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Ad
 }
 )
+
+
+
+document.getElementById("contactus").addEventListener("click", function() {
+  window.location.href = "/contact us/contactus.html";})
