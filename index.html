@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Fee Details - Melange Publications</title>
+    <style>
+        
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #3b82f6;
+            --bg-light: #f9fafb;
+            --text-dark: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        .Arjun_container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .content {
+            padding: 1.5rem;
+        }
+
+        .fee-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+
+        .fee-table th, 
+        .fee-table td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        .fee-table th {
+            background-color: #f0f4f8;
+        }
+
+        .fee-table tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .fee-table tr:hover {
+            background-color: #f0f4f8;
+        }
+
+        .note {
+            background-color: #fffbea;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .bank-details, 
+        .contact-info {
+            background-color: #f0f4f8;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .copy-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem 0.5rem;
+            }
+
+            .fee-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Arjun_container">
+        <div class="card">
+            <div class="header">
+                <h1>Conference Fee (Excluding Publication Fee)</h1>
+            </div>
+
+            <div class="content">
+                <table class="fee-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Research Scholars/Students</td>
+                            <td>2000 INR</td>
+                        </tr>
+                        <tr>
+                            <td>Academicians</td>
+                            <td>2500 INR</td>
+                        </tr>
+                        <tr>
+                            <td>Industry and Others</td>
+                            <td>3000 INR</td>
+                        </tr>
+                        <tr>
+                            <td>Foreign Authors</td>
+                            <td>75 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="note">
+                    <strong>Note:</strong> Scopus and WoS Publication charges will depend upon norms of the journals.
+                </div>
+
+                <div class="bank-details">
+                    <h2 class="section-title">Bank Details</h2>
+                    <div id="bankDetails">
+                        <p><strong>Bank A/C Name:</strong> MELANGE PUBLICATIONS</p>
+                        <p><strong>Bank A/C No:</strong> 736805000791</p>
+                        <p><strong>Bank Name:</strong> ICICI BANK</p>
+                        <p><strong>Branch:</strong> VILLIANUR, PUDUCHERRY</p>
+                        <p><strong>IFSC Code:</strong> ICIC0000368</p>
+                        <p><strong>SWIFT Code:</strong> ICICINBBCTS</p>
+                        <button class="copy-btn" onclick="copyBankDetails()">Copy Bank Details</button>
+                    </div>
+                </div>
+
+    
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyBankDetails() {
+            const bankDetails = document.getElementById('bankDetails');
+            const textToCopy = Array.from(bankDetails.querySelectorAll('p'))
+                .map(p => p.textContent)
+                .join('\n');
+
+            
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = textToCopy;
+            document.body.appendChild(tempTextArea);
+            
+            tempTextArea.select();
+            document.execCommand('copy');
+            
+            document.body.removeChild(tempTextArea);
+
+            alert('Bank details copied to clipboard!');
+        }
+
+        document.querySelectorAll('.fee-table tr').forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.style.backgroundColor = '#f0f4f8';
+            });
+            row.addEventListener('mouseleave', () => {
+                row.style.backgroundColor = '';
+            });
+        });
+    </script>
+</body>
+</html>
