@@ -8,7 +8,8 @@
 }
 
 body {
-  background: linear-gradient(to right, #f9f15a 0%, #eff388 100%);
+  background: linear-gradient(to right, #f4ed6b 0%, #d6da78 100%);
+  background-image: url('/assets/yellowbackground.jpg');
   font-size: 12px;
 }
 
