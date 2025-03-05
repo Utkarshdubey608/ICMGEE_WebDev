@@ -751,36 +751,36 @@ body {
   margin-top:-2.7vh;
   font-family: Arial, sans-serif;
 }
-.navbar {
+.akshat_navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   padding: 15px 20px;
 }
-.logo {
+.akshat_logo {
   color: #FFD700;
   font-size: 1.5rem;
   font-weight: bold;
 }
-.nav-links {
+.akshat_nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-.nav-links li {
+.akshat_nav-links li {
   display: inline;
 }
-.nav-links a {
+.akshat_nav-links a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
   transition: 0.3s;
 }
-.nav-links a:hover {
+.akshat_nav-links a:hover {
   color: #FFD700;
 }
-.menu-toggle {
+.akshat_menu-toggle {
   display: none;
   background: none;
   border: none;
@@ -790,7 +790,7 @@ body {
 
 }
 @media (max-width: 768px) {
-  .nav-links {
+  .akshat_nav-links {
       display: none;
       flex-direction: column;
       position: absolute;
@@ -800,10 +800,10 @@ body {
       width: 100%;
       text-align: center;
   }
-  .nav-links.active {
+  .akshat_nav-links.active {
       display: flex;
   }
-  .menu-toggle {
+  .akshat_menu-toggle {
       display: block;
   }
 }
