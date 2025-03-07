@@ -1,60 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Topics data
   const topics = [
-    'Machine Learning',
-    'Deep Learning',
-    'Intelligent and Knowledge-Based Systems',
-    'Expert Systems',
-    'Geographic Information Systems',
-    'Intrusion Detection',
-    'Agents and Multi-agent Systems',
+    'Health And Life Science Finance',
+    'Business',
+    'Management Economic & Accounting Arts',
+    'Humanities & Social Sciences Education',
+    'Teaching learning & assesment ',
+    'Sports & Physiotheraphy',
     'Natural Language Processing',
-    'Signal Processing',
-    'Computer Vision',
-    'Virtual Reality',
-    'Augmented Reality',
-    'Hybrid and Nonlinear Systems',
-    'Intelligent Control',
-    'Context-aware Pervasive Systems',
-    'Bioinformatics',
-    'Fuzzy Logic',
-    'Data Mining',
-    'Big Data',
-    'Internet of Things (IoT)',
-    'Internet of Services',
-    'Smart Manufacturing',
-    'Smart Devices and Products',
-    'Smart Logistics',
-    'Smart City',
-    'Cyber-physical Systems',
-    'Robotics and Automation',
-    'Support Systems for Industry 5.0',
-    'Mobile Computing',
-    'Cloud Computing for Industry 5.0',
-    'Security'
+    'Next-Gen Technologies',
   ];
 
   // Timeline data
   const timelineData = [
     {
-      date: '15.1.2025',
-      title: 'Paper Submission Deadline',
+      date: '15.3.2025',
+      title: 'Manuscript Submission Deadline',
       description: 'Last day to submit your research papers'
     },
     {
-      date: '15.2.2025',
-      title: 'Acceptance Notification',
+      date: '25.3.2025',
+      title: 'Acceptance ',
       description: 'Authors will be notified of acceptance decisions'
     },
     {
-      date: '29.2.2025',
-      title: 'Last Date of Registration',
-      description: 'Final day to register for the conference'
+      date: '5.4.2025',
+      title: 'Registration Date',
+      description: 'Registeration Date for the conference'
     },
     {
-      date: '22.3.2025',
+      date: '26.4.2025 & 27.4.25',
       title: 'Conference Date',
-      description: 'The Industry 5.0 Conference begins'
+      description: 'ICMBNT begins'
     }
   ];
 
