@@ -9,7 +9,7 @@
 
 body {
   background: linear-gradient(to right, #f4ed6b 0%, #d6da78 100%);
-  background-image: url('/assets/yellowbackground.jpg');
+  background: linear-gradient(45deg, #004bad, #7a2cbf);
   font-size: 12px;
 }
 
@@ -33,7 +33,7 @@ input {
 
 .akshat_screen {
   position: relative;
-  background: #3e3e3e;
+  background:rgba(255, 255, 255, 0.936);
   border-radius: 15px;
 }
 
