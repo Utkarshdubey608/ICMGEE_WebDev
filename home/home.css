@@ -75,6 +75,7 @@ button {
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
+    margin: 4px;
 }
 
 button:hover {
@@ -126,6 +127,7 @@ button.login:hover {
     width: 150px;
     height: auto;
     border-radius: 5px;
+
 }
 
 .image-container p {
