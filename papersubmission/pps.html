@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <button id="menuToggle" class="shanmugapriyan-menu-toggle" aria-label="Toggle menu">
-   
-    <svg id="closeIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+    <svg id="closeIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <line x1="18" y1="6" x2="6" y2="18"></line>
       <line x1="6" y1="6" x2="18" y2="18"></line>
     </svg>
   </button>
 
-<!-- menu bar -->
-<nav class="akshat_navbar">
-  <div class="akshat_logo">ICMBNT</div>
-  <button class="akshat_menu-toggle" onclick="toggleMenu()">&#9776;</button>
-  <ul class="akshat_nav-links" id="nav-links">
+  <!-- menu bar -->
+  <nav class="akshat_navbar">
+    <div class="akshat_logo">ICMBNT</div>
+    <button class="akshat_menu-toggle" onclick="toggleMenu()">&#9776;</button>
+    <ul class="akshat_nav-links" id="nav-links">
       <li><a href="/index.html">Home</a></li>
       <li><a href="/call for papers//shan.html">Call For Papers</a></li>
       <li><a href="/papersubmission//pps.html">Paper Submission</a></li>
@@ -30,11 +33,11 @@
       <li><a href="/committee/committee.html">Committee</a></li>
       <li><a href="/keynote_speakers/keynote.html">Keynote speakers</a></li>
       <li><a href="/contact us/contactus.html">Contact</a></li>
+
       <li><a href="/Venue/Venue.html">Venue</a></li>
   </ul>
 </nav>
 
-  
   <!-- Overlay -->
   <div id="overlay" class="overlay hidden"></div>
 
@@ -46,20 +49,29 @@
       <div class="container">
         <h2>Paper Submission</h2>
         <div class="info-card">
-          We invite scholars, researchers, and professionals to contribute to the multidisciplinary discourse by submitting their insightful papers and abstracts. Join us in building a platform that celebrates diverse perspectives and fosters collaboration across a spectrum of research domains. Submit your work and be a part of the transformative dialogue at ICMBNT 2025.
+          We invite scholars, researchers, and professionals to contribute to the multidisciplinary discourse by
+          submitting their insightful papers and abstracts. Join us in building a platform that celebrates diverse
+          perspectives and fosters collaboration across a spectrum of research domains. Submit your work and be a part
+          of the transformative dialogue at ICMBNT 2025.
           <br>
           <h1>Instructions To Authors:</h1>
-          
-            1.	The length of the manuscript is restricted to 12 pages. The text should be in double-column format. The first page of your submission should include the paper title, author name(s), affiliations, e-mail address and Keywords.
-  <br>2.	ICMBNT 2025 organizers regard plagiarism as a serious professional misconduct. All submissions will be screened for plagiarism and when identified, the submission by the same author will be rejected.
-  <br>3.	All manuscript that confirm to submission will be peer reviewed and evaluated based on originality, technical and / or research content/ depth, correctness, relevance to conference, contributions and readability.
-  <br>4.	Acceptance of manuscript will be communicated to authors by e-mail.
-  <br>5.	The authors of the accepted manuscripts will be allowed to make corrections in accordance with the suggestions of the reviewers and submit camera-ready paper within the stipulated deadline.
-  <br>6.	Accepted and registered manuscript will be included in the conference proceedings.
-  <br>7.	Authors must submit their manuscript to the Email - ID: icmbnt2025@gmail.com 
+
+          1. The length of the manuscript is restricted to 12 pages. The text should be in double-column format. The
+          first page of your submission should include the paper title, author name(s), affiliations, e-mail address and
+          Keywords.
+          <br>2. ICMBNT 2025 organizers regard plagiarism as a serious professional misconduct. All submissions will be
+          screened for plagiarism and when identified, the submission by the same author will be rejected.
+          <br>3. All manuscript that confirm to submission will be peer reviewed and evaluated based on originality,
+          technical and / or research content/ depth, correctness, relevance to conference, contributions and
+          readability.
+          <br>4. Acceptance of manuscript will be communicated to authors by e-mail.
+          <br>5. The authors of the accepted manuscripts will be allowed to make corrections in accordance with the
+          suggestions of the reviewers and submit camera-ready paper within the stipulated deadline.
+          <br>6. Accepted and registered manuscript will be included in the conference proceedings.
+          <br>7. Authors must submit their manuscript to the Email - ID: icmbnt2025@gmail.com
 
         </div>
-        
+
         <form id="submissionForm" class="submission-form">
           <div class="form-group">
             <label for="name">Full Name</label>
@@ -78,7 +90,8 @@
 
           <div class="form-group">
             <label for="abstract">Abstract</label>
-            <textarea id="abstract" name="abstract" rows="5" required placeholder="Enter your paper abstract"></textarea>
+            <textarea id="abstract" name="abstract" rows="5" required
+              placeholder="Enter your paper abstract"></textarea>
           </div>
 
           <div class="form-group">
@@ -86,7 +99,8 @@
             <div class="file-upload">
               <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required>
               <label for="file" class="file-label">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                   <polyline points="17 8 12 3 7 8"></polyline>
                   <line x1="12" y1="3" x2="12" y2="15"></line>
@@ -99,14 +113,16 @@
           <button type="submit" class="submit-button">Submit Paper</button>
 
           <div id="successMessage" class="status-message success hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
             Paper Submitted Successfully
           </div>
 
           <div id="errorMessage" class="status-message error hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="12" y1="8" x2="12" y2="12"></line>
               <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -116,8 +132,9 @@
         </form>
       </div>
     </section>
-   
+
   </main>
 
 </body>
+
 </html>
