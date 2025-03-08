@@ -384,7 +384,7 @@ button {
 /* Topics Section */
 .topics-section {
   padding: 5rem 1.5rem;
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 
 .topics-section h2 {
