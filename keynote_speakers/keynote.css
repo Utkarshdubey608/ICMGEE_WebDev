@@ -1,12 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff8dc;
+    background-color: white;
     margin: 0;
 
   
 }
 h1 {
-    color: #ffcc00;
+    color: #1a73e8;
+}
+h2{
+    color:white;
+}
+p{
+    color:white;
 }
 .container {
     display: flex;
@@ -69,7 +75,7 @@ z-index: 1000;
 }
 
 .akshat_logo {
-color: #FFD700;
+    color: #1a73e8;
 font-size: 1.5rem;
 font-weight: bold;
 }
@@ -92,7 +98,7 @@ transition: color 0.3s;
 }
 
 .akshat_nav-links a:hover {
-color: #FFD700;
+    color: #1a73e8
 }
 
 .akshat_menu-toggle {
