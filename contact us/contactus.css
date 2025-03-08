@@ -73,11 +73,11 @@ input {
 }
 
 .akshat_screen-header-button.close {
-  background: #eddb1c;
+  background:color: #1a73e8;
 }
 
 .akshat_screen-header-button.maximize {
-  background: #e8e925;
+  background:#1a73e8;
 }
 
 .akshat_screen-header-button.minimize {
@@ -114,7 +114,7 @@ input {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ead91d;
+  color: #1a73e8;
   font-size: 26px;
 }
 
@@ -126,7 +126,7 @@ input {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: #ead91d;
+  background:#1a73e8;
 }
 
 .akshat_contact {
@@ -172,14 +172,14 @@ input {
 .akshat_form-button {
   background: none;
   border: none;
-  color: #ead91d;
+  color: #1a73e8;
   font-size: 14px;
   cursor: pointer;
   outline: none;
 }
 
 .akshat_form-button:hover {
-  color: #d8cc44;
+  color: #1a73e8;
 }
 
 .akshat_contact-info {
@@ -267,7 +267,7 @@ body {
   padding: 15px 20px;
 }
 .akshat_logo {
-  color: #FFD700;
+  color: #1a73e8;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -286,7 +286,7 @@ body {
   transition: 0.3s;
 }
 .akshat_nav-links a:hover {
-  color: #FFD700;
+  color: #1a73e8;
 }
 .akshat_menu-toggle {
   display: none;
