@@ -161,8 +161,34 @@ document.addEventListener('DOMContentLoaded', function() {
     createTopicItems(leftColumnTopics, topicsColumns[0]);
     createTopicItems(rightColumnTopics, topicsColumns[1]);
   }
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
 
-  // Create timeline
+  let currentIndex = 0;
+  const slideCount = slides.length;
+
+  function updateCarousel() {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  function moveToNextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount;
+    updateCarousel();
+  }
+
+  function moveToPrevSlide() {
+    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+    updateCarousel();
+  }
+
+  nextButton.addEventListener('click', moveToNextSlide);
+  prevButton.addEventListener('click', moveToPrevSlide);
+
+  setInterval(moveToNextSlide, 3000);
+
   function createTimeline() {
     timelineData.forEach((item, index) => {
       const timelineItem = document.createElement('div');
