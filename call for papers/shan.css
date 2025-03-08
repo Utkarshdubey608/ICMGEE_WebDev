@@ -355,8 +355,8 @@ button {
 
 .cta-button {
   padding: 1rem 2rem;
-  background-color: var(--blue-500);
-  color: var(--white);
+  background-color:whitesmoke;
+  color: var(--gray-600);
   border-radius: 9999px;
   font-weight: 600;
   font-size: 1.125rem;
@@ -717,7 +717,8 @@ button {
 /* Contact Section */
 .contact-section {
   padding: 5rem 1.5rem;
-  background: linear-gradient(45deg, var(--blue-50), var(--purple-50), var(--white));
+  background: linear-gradient(45deg, var(--blue-600), var(--purple-500));
+
 }
 
 .contact-section h2 {
