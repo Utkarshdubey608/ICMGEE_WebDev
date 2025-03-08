@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICMBNT 2025 - Conference Committee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(45deg, #004aad, #7b2cbf);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: #004aad;
+        }
+        .card {
+            transition: 0.3s;
+            border: none;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-body {
+            text-align: center;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+
+
+        /* Navigation Bar */
+.akshat_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.akshat_logo {
+    color: #FFD700;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.akshat_nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.akshat_nav-links li {
+    display: inline;
+}
+
+.akshat_nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.akshat_nav-links a:hover {
+    color: #FFD700;
+}
+
+.akshat_menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .akshat_nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+    .akshat_nav-links.active {
+        display: flex;
+    }
+    .akshat_menu-toggle {
+        display: block;
+    }
+}
+    </style>
+</head>
+<body>
+
+
+     <!-- Navigation Bar -->
+ <nav class="akshat_navbar">
+    <div class="akshat_logo">ICMBNT</div>
+    <button class="akshat_menu-toggle" onclick="toggleMenu()">&#9776;</button>
+    <ul class="akshat_nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/keynote_speakers/keynote.html">Keynote speakers</a></li>
+        <li><a href="/committee/committee.html" style="color: #FFD700 !important;">committee</a></li>
+        <li><a href="/call for papers/shan.html">Publication</a></li>
+        <li><a href="/registration/reg.html">Registrations</a></li>
+        <li><a href="/contact us/contactus.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>International Conference on Multidisciplinary Breakthroughs and NextGen Technologies (ICMBNT – 2025)</h1>
+        <p>Connecting Global Experts for Next-Gen Innovations</p>
+    </section>
+
+    <!-- Conference Chair Section -->
+    <section class="container">
+        <h2 class="section-title">Conference Chair</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Prof. Dr. Azham Hussain</h5>
+                        <p class="card-text">School of Computing, Universiti Utara Malaysia, Malaysia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conference Co-Chairs -->
+    <section class="container">
+        <h2 class="section-title">Conference Co-Chairs</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. S. Sridhar</h5>
+                        <p class="card-text">SRM Institute of Science and Technology, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. K. Ganesh Kumar</h5>
+                        <p class="card-text">SRM Institute of Science and Technology, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Vishnu Kumar Kaliappan</h5>
+                        <p class="card-text">Konkuk University, South Korea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Board -->
+    <section class="container">
+        <h2 class="section-title">Advisory Board</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Susana Gómez Martínez</h5>
+                        <p class="card-text">Universidad de Valladolid, Spain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Sam Goundar</h5>
+                        <p class="card-text">RMIT University, Vietnam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ts. Dr. Tan Kian Lam</h5>
+                        <p class="card-text">Wawasan Open University, Malaysia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conference Coordinators -->
+    <section class="container">
+        <h2 class="section-title">Conference Coordinators</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. A. Murugan</h5>
+                        <p class="card-text">SRM Institute of Science and Technology, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. T. Karthick</h5>
+                        <p class="card-text">SRM Institute of Science and Technology, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. R. Jeyaraj</h5>
+                        <p class="card-text">SRM Institute of Science and Technology, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee Members -->
+    <section class="container">
+        <h2 class="section-title">Committee Members</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. John Deva Prasanna</h5>
+                        <p class="card-text">SRM Institute of Science and Technology, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. K. Priyadarshini</h5>
+                        <p class="card-text">SRM Institute of Science and Technology, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 ICMBNT Conference | Designed by Akshat</p>
+    </footer>
+
+</body>
+</html>
