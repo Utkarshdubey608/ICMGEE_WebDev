@@ -32,14 +32,14 @@ body {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #FFD700;
+    color: #1a73e8;
 }
 
 #home .subheading {
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #FFD700;
+    color: #1a73e8;
 }
 
 #home .date, #home .venue, #home .location, #home .contact, #home .website {
@@ -49,13 +49,13 @@ body {
 }
 
 #home p a {
-    color: #FFD700;
+    color: #1a73e8;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 #home p a:hover {
-    color: #ffc107;
+    color: #1a73e8;
     text-decoration: underline;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 button {
-    background-color: #FFD700;
+    color: #1a73e8;
     color: #333;
     border: none;
     padding: 15px 30px;
@@ -80,7 +80,7 @@ button {
 }
 
 button:hover {
-    background-color: #ffc107;
+    color: #1a73e8;
     transform: scale(1.05);
 }
 
@@ -134,7 +134,7 @@ button.login:hover {
 .image-container p {
     margin-top: 10px;
     font-size: 0.9em;
-    color: #FFD700;
+    color: #1a73e8;
 }
 
 .image-container p strong {
@@ -204,7 +204,7 @@ section {
 }
 
 .akshat_logo {
-    color: #FFD700;
+    color:#1a73e8;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -227,7 +227,7 @@ section {
 }
 
 .akshat_nav-links a:hover {
-    color: #FFD700;
+    color:#1a73e8;
 }
 
 .akshat_menu-toggle {
@@ -265,7 +265,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: rgba(255, 255, 255, 0.85); 
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -304,7 +304,7 @@ section {
 
 
 .scope-section {
-    background-color: rgba(255, 255, 255, 0.85); 
+    background-color: white; 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -355,7 +355,7 @@ section {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 50px;
-    background-image: url('/assets/yellowbackground.jpg');
+    background: linear-gradient(45deg, #004bad, #7a2cbf);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -407,7 +407,7 @@ section {
 }
 
 #home p a {
-    color: #ffdd57;
+    color: #1a73e8;
     text-decoration: none;
 }
 
@@ -450,12 +450,12 @@ section {
 .image-container p {
     margin-top: 10px;
     font-size: 0.9em;
-    color: #ffdd57;
+    color: #1a73e8;
 }
 
 .image-container p strong {
     font-size: 1em;
-    color: #fff;
+    color: white;
 }
 
 
@@ -478,7 +478,7 @@ section {
     z-index: 1000;
   }
   .akshat_logo {
-    color: #FFD700;
+    color: #1a73e8;
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -497,7 +497,7 @@ section {
     transition: 0.3s;
   }
   .akshat_nav-links a:hover {
-    color: #FFD700;
+    color: #1a73e8;
   }
   .akshat_menu-toggle {
     display: none;
