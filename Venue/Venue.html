@@ -3,13 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Cihan University</title>
+    <title>About SRM Hotel - Tiruchirappalli</title>
     <link rel="stylesheet" href="Venue.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #004aad, #7b2cbf);
+            color: #fff;
+        }
+        .akshat_navbar {
+            background: #333; /* Navbar color unchanged */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .akshat_logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffeb3b;
+        }
+        .akshat_nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .akshat_nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .akshat_menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .about-section, .scope-section {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .about-content h1 {
+            font-size: 2rem;
+            color: #ffeb3b;
+        }
+        .about-content h2 {
+            font-size: 1.5rem;
+            color: #ffeb3b;
+        }
+        .about-content p {
+            line-height: 1.6;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .image-gallery .large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        @media (max-width: 768px) {
+            .akshat_nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .akshat_menu-toggle {
+                display: block;
+            }
+            .image-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            .image-gallery .large {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- menu bar -->
+    <!-- Menu Bar -->
     <nav class="akshat_navbar">
         <div class="akshat_logo">ICMBNT</div>
         <button class="akshat_menu-toggle" onclick="toggleMenu()">&#9776;</button>
@@ -24,31 +118,40 @@
             <li><a href="/Venue/Venue.html">Venue</a></li>
         </ul>
     </nav>
-<div class="Apurva_Abhijeet">
-    
-    <section class="about-section">
-        <div class="about-image">
-            <img src="/assets/aboutSection.jpg" alt="Cihan University Campus">
-        </div>
-        <div class="about-content">
-            <h1>Society for Cyber intelligent systems</h1>
-            <h2>Vision</h2>
-            <p>The Vision of the society is to be a global leader in advancing cybersecurity and intelligent systems by fostering innovation, research, and collaboration, ensuring a secure and resilient digital future for all.</p>
-            <h2>Mission</h2>
-            <p>The primary mission is to advance cybersecurity and intelligent systems by promoting cutting-edge technologies like AI and machine learning, fostering research in cyber intelligence, and enhancing threat detection and mitigation strategies. We are committed to organizing training programs, workshops, and awareness campaigns to educate professionals and the public on best practices. Through the publication of research journals, international collaborations, and strategic partnerships with academic institutions, industries, and government agencies, we aim to strengthen the global cybersecurity ecosystem. Upholding ethical AI practices, disseminating practical knowledge, and hosting national and international conferences, we strive to create a secure, innovative, and resilient digital future. </p>
-        </div>
-    </section>
 
-    <section class="scope-section" style="margin-bottom: 3vh;">
-        <h1 style="color: plum;">Scope Of The Conference </h1>
-        <p>International conference on Multidisciplinary breakthroughs and NextGen Technologies (ICMBNT 2025) is designed to integrate perspectives from Science, Technology, Medical and Healthcare, Management, social sciences, Education, sports and environmental studies to develop holistic solutions for global issues. </p>
-    <br>
-    <p>Also in a rapidly evolving digital-first business world, global organizations are highly influenced by next generation technologies. Future technological advancements, developments, and innovations enabled by the internet, software, and services are known as next generation technologies. These include advanced robotics, AI, IoT, RPA, quantum computing, 3-D printing, 5G wireless networks, virtual reality and augmented reality, and blockchain</p>
-    <br>
-    <p>Next generation technologies are paving a way for network-enabled, miniature, and fully automated machines. Although enterprise applications based on such technologies are still in the nascent stages of development, they are gradually beginning to drive innovation strategies of the business and the overall impact of these technologies is expected to multifold over the coming years.</p>
-    <br>
-    <p>ICMBNT 2025 will be a central hub for esteemed Research experts worldwide and can anticipate unparalleled opportunities to network, gain invaluable insights, showcase their hidden potential, present significant research findings, receive due credit and recognition for their diligent work.  Join us in this collaborative endeavour, where the intersections of knowledge spark new dimensions in research and propel us collectively towards innovative solutions and breakthroughs</p>
-    </section>
-</div>
+    <div class="Apurva_Abhijeet">
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-image">
+                <img src="/assets/aboutSection.jpg" alt="SRM Hotel - Tiruchirappalli">
+            </div>
+            <div class="about-content">
+                <h1>SRM Hotel - Tiruchirappalli</h1>
+                <p>3.5 stars out of 5</p>
+                <p>Race Course Road, Khajamalai, Kajamalai, Tiruchirappalli, India, 620023 - <a href="#" style="color: #ffeb3b;">See map</a></p>
+                <p>Discover the perfect stay for two travelers at the SRM Hotel in Tiruchirappalli. With easy access to local attractions and a vibrant neighborhood, the hotel offers indulgent facilities like a relaxing massage, indoor pool, and stylish bar. Enjoy spacious, modern rooms with AC, complimentary Wi-Fi, and an in-room safe. Start your day with a delicious in-room breakfast. Explore landmarks and go shopping. Benefit from the hotel's proximity to the airport and experience a hassle-free stay with excellent staff and prompt room service. SRM Hotel offers great value for two travelers in Tiruchirappalli. [Some content may be Generative AI assisted. Inaccuracies may occur.]</p>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="about-section">
+            <h2 style="color: #ffeb3b;">Gallery</h2>
+            <div class="image-gallery">
+                <img src="https://pix8.agoda.net/hotelImages/745969/0/e6e64c3cc5c7836bb82928b9bde8157a.jpeg?ce=0&s=1024x" alt="Hotel Image 1" class="large">
+                <img src="https://pix8.agoda.net/hotelImages/745969/-1/63970dd77c211cbc27804da56f0d7906.jpg?ca=13&ce=1&s=1024x" alt="Hotel Image 2">
+                <img src="https://pix8.agoda.net/property/745969/0/584c0518cb5a2d5d65bc817dc1761da4.jpeg?ce=0&s=1024x" alt="Hotel Image 3">
+                <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/210250952.jpg?k=de81fa9af447154e9ec8f5169ba67bba597643da788f7cc40f296f929b042e80&o=&s=1024x" alt="Hotel Image 4" class="large">
+                <img src="https://pix8.agoda.net/hotelImages/745969/-1/718821e0a6a7c364295857ba77c6d00b.jpg?ca=7&ce=1&s=1024x" alt="Hotel Image 5">
+                <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/210265415.jpg?k=b4c3bef713e6cd2f54a1985b1d828086d61e1e37b673c4d6db861259fcbb83a4&o=&s=1024x" alt="Hotel Image 6">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </body>
 </html>
