@@ -1,14 +1,23 @@
 /* Base Styles */
 :root {
-  --yellow-50: #fffbeb;
-  --yellow-100: #fef3c7;
-  --yellow-200: #fde68a;
-  --yellow-300: #fcd34d;
-  --yellow-400: #fbbf24;
-  --yellow-500: #f59e0b;
-  --yellow-600: #d97706;
-  --yellow-700: #b45309;
-  --yellow-800: #92400e;
+  --blue-50: #e6f0ff;
+  --blue-100: #cce0ff;
+  --blue-200: #99c2ff;
+  --blue-300: #66a3ff;
+  --blue-400: #3385ff;
+  --blue-500: #0066ff;
+  --blue-600: #004aad;
+  --blue-700: #003d8c;
+  --blue-800: #002f6b;
+  --purple-50: #f5e6ff;
+  --purple-100: #ebccff;
+  --purple-200: #d699ff;
+  --purple-300: #c266ff;
+  --purple-400: #ad33ff;
+  --purple-500: #7b2cbf;
+  --purple-600: #5a1f8c;
+  --purple-700: #3d1466;
+  --purple-800: #2a0d4d;
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
@@ -42,32 +51,32 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   color: var(--gray-700);
-  background: linear-gradient(to bottom right, var(--yellow-50), var(--yellow-100), var(--white));
+  background: linear-gradient(45deg, var(--blue-600), var(--purple-500));
   min-height: 100vh;
 }
 
-.carousel-section{
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      gap: 50px;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f0f0f0;
+/* Carousel Section */
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--gray-100);
 }
 
-.carousel-section p{
+.carousel-section p {
   width: 80%;
 }
 
 .carousel {
   position: relative;
   width: 90%;
-  /* max-width: 800px; */
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-lg);
 }
 
 .carousel-track {
@@ -85,7 +94,7 @@ body {
 .carousel-slide img {
   width: 30%;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-md);
 }
 
 .carousel-buttons {
@@ -99,7 +108,7 @@ body {
 
 .carousel-buttons button {
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--white);
   border: none;
   padding: 10px 15px;
   cursor: pointer;
@@ -111,6 +120,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -124,13 +134,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--yellow-600);
+  color: var(--blue-500);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: var(--yellow-700);
+  color: var(--blue-700);
 }
 
 button {
@@ -262,12 +272,12 @@ button {
 }
 
 .menu-item:hover {
-  background-color: var(--yellow-50);
+  background-color: var(--blue-50);
 }
 
 .menu-item.active {
-  background-color: var(--yellow-100);
-  color: var(--yellow-800);
+  background-color: var(--blue-100);
+  color: var(--blue-800);
 }
 
 .menu-item svg {
@@ -310,13 +320,13 @@ button {
 .tech-dot {
   position: absolute;
   border-radius: 50%;
-  background-color: var(--yellow-400);
+  background-color: var(--blue-400);
 }
 
 .tech-line {
   position: absolute;
   height: 1px;
-  background-color: var(--yellow-500);
+  background-color: var(--blue-500);
 }
 
 .hero-content {
@@ -345,8 +355,8 @@ button {
 
 .cta-button {
   padding: 1rem 2rem;
-  background-color: var(--yellow-400);
-  color: var(--gray-800);
+  background-color: var(--blue-500);
+  color: var(--white);
   border-radius: 9999px;
   font-weight: 600;
   font-size: 1.125rem;
@@ -357,12 +367,12 @@ button {
 .cta-button:hover {
   box-shadow: var(--shadow-xl);
   transform: scale(1.05);
-  background-color: var(--yellow-300);
+  background-color: var(--blue-600);
 }
 
 .cta-button:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.4);
+  box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.4);
 }
 
 .scroll-indicator {
@@ -384,7 +394,6 @@ button {
 /* Topics Section */
 .topics-section {
   padding: 5rem 1.5rem;
-  /* background-color: var(--white); */
 }
 
 .topics-section h2 {
@@ -400,7 +409,7 @@ button {
 }
 
 .topic-item {
-  background-color: var(--yellow-50);
+  background-color: var(--blue-50);
   border-radius: 0.5rem;
   padding: 0.75rem;
   transition: all 0.3s;
@@ -409,14 +418,14 @@ button {
 }
 
 .topic-item:hover {
-  background-color: var(--yellow-100);
+  background-color: var(--blue-100);
   transform: scale(1.02);
 }
 
 .topic-dot {
   width: 0.5rem;
   height: 0.5rem;
-  background-color: var(--yellow-400);
+  background-color: var(--blue-500);
   border-radius: 50%;
   margin-right: 0.75rem;
   transition: transform 0.3s;
@@ -445,7 +454,7 @@ button {
 /* Submission Section */
 .submission-section {
   padding: 5rem 1.5rem;
-  background: linear-gradient(to bottom right, var(--yellow-50), var(--yellow-100), var(--white));
+  background: linear-gradient(45deg, var(--blue-50), var(--purple-50), var(--white));
 }
 
 .submission-section h2 {
@@ -479,7 +488,7 @@ button {
 }
 
 .info-footer svg {
-  color: var(--yellow-500);
+  color: var(--blue-500);
   margin-right: 0.5rem;
 }
 
@@ -520,8 +529,8 @@ button {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: var(--yellow-400);
-  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.3);
+  border-color: var(--blue-400);
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.3);
 }
 
 .form-group textarea {
@@ -576,20 +585,20 @@ button {
   border-radius: 0.5rem;
   font-weight: 500;
   color: var(--white);
-  background-color: var(--yellow-500);
+  background-color: var(--blue-500);
   box-shadow: var(--shadow-lg);
   transition: all 0.3s;
   margin-top: 1rem;
 }
 
 .submit-button:hover {
-  background-color: var(--yellow-600);
+  background-color: var(--blue-600);
   transform: scale(1.02);
 }
 
 .submit-button:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.4);
+  box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.4);
 }
 
 .status-message {
@@ -639,7 +648,7 @@ button {
   top: 0;
   bottom: 0;
   width: 0.125rem;
-  background-color: var(--yellow-200);
+  background-color: var(--blue-200);
 }
 
 .timeline-item {
@@ -656,7 +665,7 @@ button {
   transform: translateX(-50%);
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--yellow-400);
+  background-color: var(--blue-500);
   border: 4px solid var(--white);
   border-radius: 50%;
   box-shadow: var(--shadow-md);
@@ -684,7 +693,7 @@ button {
 }
 
 .timeline-date svg {
-  color: var(--yellow-500);
+  color: var(--blue-500);
   margin-right: 0.5rem;
 }
 
@@ -708,7 +717,7 @@ button {
 /* Contact Section */
 .contact-section {
   padding: 5rem 1.5rem;
-  background: linear-gradient(to bottom right, var(--yellow-50), var(--yellow-100), var(--white));
+  background: linear-gradient(45deg, var(--blue-50), var(--purple-50), var(--white));
 }
 
 .contact-section h2 {
@@ -732,12 +741,12 @@ button {
   box-shadow: var(--shadow-lg);
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--yellow-600);
+  color: var(--blue-500);
   transition: all 0.3s;
 }
 
 .contact-email a:hover {
-  color: var(--yellow-700);
+  color: var(--blue-600);
   transform: scale(1.05);
   box-shadow: var(--shadow-xl);
 }
@@ -806,46 +815,46 @@ button {
   }
 }
 
-
-
-
-
-/* 
-menu bar */
-body {
-  margin-top:-2.7vh;
-  font-family: Arial, sans-serif;
-}
+/* Navigation Bar */
 .akshat_navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   padding: 15px 20px;
-  margin-top: -1.3vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-top: -2.6vh;
 }
+
 .akshat_logo {
-  color: #FFD700;
+  color:#1a73e8;
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .akshat_nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
+
 .akshat_nav-links li {
   display: inline;
 }
+
 .akshat_nav-links a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
+
 .akshat_nav-links a:hover {
-  color: #FFD700;
+  color:#1a73e8;
 }
+
 .akshat_menu-toggle {
   display: none;
   background: none;
@@ -853,8 +862,8 @@ body {
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
-
 }
+
 @media (max-width: 768px) {
   .akshat_nav-links {
       display: none;
